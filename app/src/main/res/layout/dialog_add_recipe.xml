@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipe Title"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter recipe name" />
+
+            <TextView
+                android:id="@+id/recipe_image_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipe Image"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/recipe_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter recipe image url" />
+
+            <TextView
+                android:id="@+id/text_view_ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Ingredients"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_text_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="List ingredients one per line" />
+
+            <TextView
+                android:id="@+id/recipe_duration_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipe Duration"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/recipe_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter recipe duration" />
+
+            <TextView
+                android:id="@+id/text_view_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Instructions"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_text_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write step-by-step instructions" />
+
+            <TextView
+                android:id="@+id/ratingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Rating"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:max="5" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
